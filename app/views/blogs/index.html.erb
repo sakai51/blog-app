@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>マイブログ</title>
+  </head>
+
+  <body>
+<header>
+<h1>ブログ記事</h1>
+</header>
+<div class="contents">
+  <% @blogs.each do |blog| %>
+    <div class="message clearfix">
+      <div class="message_box">
+        <p class="text">
+          <%= blog.text %>
+        </p>
+      </div>
+    </div>
+  <% end %>
+  <%= paginate(@blogs) %>
+</div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ミニアプリ</title>
+  <style type="text/css" href="./style.css"></style>
+
+<!-- 後から貼り付け↓ここから -->
+<!-- CSSとJavaScriptダウンロード用のhtmlタグ -->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <!-- jQueryのCDN -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <!-- 後から貼り付け↑ここまで -->
+
+</head>
+<body>
+    <!-- ナビゲーションバーのhtmlコード -->
+    <nav class="blue accent-3" >
+        <div class="nav-wrapper">
+          <a href="/blogs" class="brand-logo">僕のブログ</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/users/sign_out">ログアウト</a></li>
+            <li><a href="/blogs/new">新規記事投稿</a></li>
+            <li><a href="/users/sign_in">ログイン</a></li>
+            <li><a href="/users/sign_up">サインアップ</a></li>
+          </ul>
+        </div>
+      </nav>  
+
+<%= yield %>
+<script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
